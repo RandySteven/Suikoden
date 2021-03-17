@@ -4,6 +4,7 @@ public class Character {
 	private String name;
 	private int hp;
 	private int xp;
+	private int attack;
 	private int defense;
 	private ArrayList<Rune> runeList;
 	private ArrayList<Item> itemList;
@@ -25,6 +26,12 @@ public class Character {
 	}
 	public void setXp(int xp) {
 		this.xp = xp;
+	}
+	public int getAttack() {
+		return attack;
+	}
+	public void setAttack(int attack) {
+		this.attack = attack;
 	}
 	public int getDefense() {
 		return defense;
@@ -50,16 +57,18 @@ public class Character {
 	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
-	public Character(String name, int hp, int xp, int defense, ArrayList<Rune> runeList, ArrayList<Item> itemList,
-			Weapon weapon) {
+	public Character(String name, int hp, int xp, int attack, int defense, ArrayList<Rune> runeList,
+			ArrayList<Item> itemList, Weapon weapon) {
 		super();
 		this.name = name;
 		this.hp = hp;
 		this.xp = xp;
+		this.attack = attack;
 		this.defense = defense;
 		this.runeList = runeList;
 		this.itemList = itemList;
 		this.weapon = weapon;
 	}
+	
 	
 }
